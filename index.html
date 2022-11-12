@@ -19,8 +19,112 @@
     <main class="px-3">
       <div class="row">
         <div class="col-lg-6">
-          <iframe src="https://liveestacio-my.sharepoint.com/personal/202007032811_alunos_estacio_br/_layouts/15/Doc.aspx?sourcedoc={ab2449a9-2b64-4b26-8bef-fd3be16dcce9}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="640px" height="480px" frameborder="0">Este é um apresentação do <a target="_blank" href="https://office.com">Microsoft Office</a> incorporado, da plataforma <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+          <div id="impress"
+            data-transition-duration="1000"
+
+            data-width="1920"
+            data-height="1080"
+            data-max-scale="3"
+            data-min-scale="0"
+            data-perspective="1000"
+
+            data-autoplay="10">
+            <div class="step slide title" data-x="-2200" data-y="-3000">
+                <h1>Example Presentation: <br />
+                    Classic Slides</h1>
+                <h2>Henrik Ingo</h2>
+                <h3>2015</h3>
+
+                <div class="notes">
+                Any element with the class="notes" will not be displayed. This can
+                be used for speaker notes. In fact, the impressConsole plugin will
+                show it in the speaker console!
+                </div>
+            </div>
+            <div id="toc" class="step slide" data-rel-x="2200" data-rel-y="0">
+              <h1>Table of Contents</h1>
+              <ul>
+                  <li><a href="#step-1">A title slide</a></li>
+                  <li><a href="#step-2">Table of Contents</a></li>
+                  <li><a href="#step-3">Text slide</a></li>
+                  <li><a href="#step-4">Bullet points</a></li>
+                  <li><a href="#step-5">Blockquote &amp; image</a></li>
+                  <li><a href="#step-6">More basic text styles</a></li>
+                  <li><a href="#step-7">Motion effects 101</a></li>
+                  <li><a href="#addons">Add-ons</a></li>
+                  <li><a href="#moreinfo">More info</a></li>
+              </ul>
+
+              <div class="notes">
+                  <p>Table of Contents, with links to other slides of this same presentation.</p>
+
+                  <p>Note that instead of absolute positioning we use relative positioning,
+                  with the data-rel-x and data-rel-y attributes. This means the step is
+                  positioned relative to the foregoing step. In other words, this is
+                  equivalent to data-x="0" data-y="-3000".</p>
+                </div>
+            </div>
+            <div class="step slide">
+                <h1>A slide with text</h1>
+                <p>This slide has a few paragraphs <br />(p element) of normal text.</p>
+                <p>Personally I like centered or even justified text, as it looks less boring. This can of course be set in <a href="css/classic-slides.css">the css file</a>.</p>
+                <p>I really like the style on links in these presentations. I modified the border to be beveled, but it's mostly from <a href="http://impress.github.io/impress.js/">@bartaz' original demo</a>. <a href="https://twitter.com/bartaz">@bartaz</a> is the creator of impress.js.</p>
+
+                <div class="notes">
+                In this slide, we don't even specify the relative position, rather
+                that too is inherited. So this slide will again be 1000px to the
+                right of the previous one.
+                </div>
+            </div>
+            <div class="step slide">
+                <h1>Bullet points</h1>
+                <ul>
+                    <li>A slide with bullet points. This is the first point.</li>
+                    <li>Second point</li>
+                    <li>Third point. Under this point we also have some sub-bullets:
+                        <ul>
+                            <li>Sub-bullet 1</li>
+                            <li>Sub-bullet 2</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="notes">
+                </div>
+            </div>
+            <div class="step slide" data-rel-position="relative" data-rel-x="2200" data-rel-y="600" data-rel-rotate-z="30">
+                <h1>A blockquote &amp; image</h1>
+                <img src="images/3476636111_c551295ca4_b.jpg"
+                    alt="Mother Teresa holding a newborn baby"
+                    class="right"/>
+                <blockquote>
+                Spread love everywhere you go. <br />Let no one ever come to you without leaving happier.
+                <p style="text-align: right">Mother Teresa</p>
+                <p class="left bottom"><small>Image credit: <a href="https://www.flickr.com/photos/peta-de-aztlan/3476636111/">Peta_de_Aztlan</a>@Flickr. CC-BY 2.0</small></p>
+                </blockquote>
+
+                <div class="notes">
+                    We use <code>data-rel-position="relative"</code> to make <code>data-rel-rotate-*</code> work,
+                    and make <code>data-rel-x/data-rel-y/data-rel-y</code> be calculated at the coordination related to previous slide.
+                    The relative position and rotation will be inherited by following slides,
+                    so it's not necessary to repeat it again and again.
+                </div>
+            </div>
+            <div id="overview" class="step" data-x="4500" data-y="1500" data-scale="10" style="pointer-events: none;">
+            </div>
+          </div><!--
+            Add navigation-ui controls: back, forward and a select list.
+            Add a progress indicator bar (current step / all steps)
+            Add the help popup plugin
+          -->
+          <div id="impress-toolbar"></div>
+
+          <div class="impress-progressbar"><div></div></div>
+          <div class="impress-progress"></div>
+
+          <div id="impress-help"></div>
         </div>
+
         <div class="col-lg-6">
           jogo
         </div>
@@ -37,6 +141,7 @@
   <script src="https://recalderon.github.io/cientec-reaproveitamentodadauga/assets/lib/impress/js/"></script>
   <script src="https://recalderon.github.io/nate/assets/dist/js/main.js"></script>
   <script src="/assets/dist/js/main.js"></script>
+  <script>impress().init();</script>
 </body>
 
 </html>
