@@ -18,9 +18,20 @@
     </header>
     <main class="px-3">
       <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="d-flex flex-row gap-3 align-items-center justify-content-center mb-4">
+            <img src="https://recalderon.github.io/cientec-reaproveitamentodaagua/assets/dist/img/logo_angelorum.png" alt="logo colegio angelorum" class="img-fluid" width="400px">
+            <div class="vr align-self-auto" style="height: 50px;"></div>
+            <h1 class="fw-bold m-0">CIENTEC 2022</h1>
+          </div>
+          <h2 class="mb-4 fw-bold">INOVAÇÕES TECNOLÓGICAS PARA PROBLEMAS AMBIENTAIS ÂMBITO ECONÔMICO</h2>
+          <h3>REAPROVEITAMENTO DA ÁGUA DA CHUVA<br>8º ANO - GRUPO 2</h3>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-lg-6">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalXl">Ver apresentação de slides</button>
-          <div class="modal fade" id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-slides">Ver apresentação de slides</button>
+          <div class="modal fade" id="modal-slides" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-md-down">
               <div class="modal-content">
                 <div class="modal-header">
@@ -34,10 +45,24 @@
               </div>
             </div>
           </div>
+          <div class="modal fade" id="modal-jogo" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-md-down">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://recalderon.github.io/cientec-reaproveitamentodaagua/jogo.html"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="col-lg-6">
-          ver jogo
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-jogo">Ver jogo</button>
         </div>
       </div>
     </main>
