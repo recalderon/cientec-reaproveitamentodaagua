@@ -81,7 +81,7 @@
 	color: #495057;
 	font-weight: 600;
 	border: 2px solid #495057;
-	&:hover{
+	&:hover, a.btn{
 		color: whitesmoke;
 		background-color: #495057;
 		border: 2px solid #495057;
@@ -89,7 +89,7 @@
 }
 
 a.btn{
-	font-size: var(--bs-btn-font-size);
+	font-size: 20px;
 }
 
 h2{
