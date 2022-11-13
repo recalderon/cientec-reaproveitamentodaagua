@@ -1,3 +1,9 @@
+#pleaserotate-message {
+    color: #212529 !important;
+}
+
+
+
 div.step {
     background-image: url('https://recalderon.github.io/cientec-reaproveitamentodaagua/assets/dist/img/fundo.png');
     background-position: bottom center;
@@ -47,11 +53,12 @@ div.step {
         $background-color_2: rgba(0, 0, 0, .1);
 
         audio {
-            display:none;
-            }
+            display: none;
+        }
 
         .plyr--audio {
-            font-size:1rem;
+            font-size: 1rem;
+
             .plyr__controls {
                 background-color: $background-color_1;
                 border: none;
@@ -121,6 +128,7 @@ div.step {
             }
         }
     }
+
 
 
 

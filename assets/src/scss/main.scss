@@ -69,6 +69,10 @@
 		background-image: url('https://recalderon.github.io/cientec-reaproveitamentodaagua/assets/dist/img/sea.gif');
 		background-position: bottom center;
 		background-size: cover;
+		@media (max-width: 781px) {
+			max-width: 100%;
+			background-position: center;
+		}
 	}
 }
 
@@ -101,10 +105,10 @@ h3{
 
 .cover-container {
 	max-width: 60%;
-	@media (max-width: 781px) {
-		max-width: 100%;
-	}
 	@media (max-width: 1200px) {
 		max-width: 80%;
+	}
+	@media (max-width: 781px) {
+		max-width: 100%;
 	}
 }

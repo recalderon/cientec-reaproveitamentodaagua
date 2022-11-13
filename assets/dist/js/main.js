@@ -1,11 +1,12 @@
-impress().init();
-document.addEventListener('DOMContentLoaded', (event) => {
 
-    document.addEventListener('impress:stepenter', (event) =>{
+document.addEventListener('DOMContentLoaded', (event) => {
+    impress().init();
+
+    document.addEventListener('impress:stepenter', (event) => {
         let targetzao = event.target
         let stepaudio = targetzao.querySelector('.narracao')
 
-        if (stepaudio){
+        if (stepaudio) {
             const player = new Plyr(stepaudio, {
                 resetOnEnd: true,
                 controls: [
@@ -22,11 +23,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
 
     })
-    document.addEventListener('impress:stepleave', (event) =>{
+    document.addEventListener('impress:stepleave', (event) => {
         console.log(event)
         let targetzao = event.target
         let stepaudio = targetzao.querySelector('audio')
-        if (stepaudio){
+        if (stepaudio) {
             stepaudio.pause();
         }
 
