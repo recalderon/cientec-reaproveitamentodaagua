@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     if (hasTouchScreen) {
         document.getElementById("play").classList.add('disabled')
+        document.getElementById("play").textContent = 'JOGAR (somente disponível para desktop)'
     }
 
 })
