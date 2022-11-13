@@ -1,6 +1,5 @@
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    impress().init();
 
     document.addEventListener('impress:stepenter', (event) => {
         let targetzao = event.target
@@ -24,7 +23,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     })
     document.addEventListener('impress:stepleave', (event) => {
-        console.log(event)
         let targetzao = event.target
         let stepaudio = targetzao.querySelector('audio')
         if (stepaudio) {
