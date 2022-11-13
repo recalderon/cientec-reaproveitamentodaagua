@@ -1,5 +1,4 @@
-
-div.step{
+div.step {
     background-image: url('https://recalderon.github.io/cientec-reaproveitamentodaagua/assets/dist/img/fundo.png');
     background-position: bottom center;
     background-size: cover;
@@ -7,43 +6,122 @@ div.step{
     flex-direction: column;
     align-items: center;
     color: #212529 !important;
-    .filtro{
+
+    .filtro {
         z-index: 1;
     }
-    .conteudo{
+
+    .conteudo {
         z-index: 2;
-        .logo{
+
+        .logo {
             width: 400px;
         }
-        h1{
+
+        h1 {
             font-weight: bold;
         }
 
-        h2{
+        h2 {
             font-weight: normal;
         }
-        p{
+
+        p {
             font-size: 2rem;
             text-align: left;
         }
-        ul{
+
+        ul {
             list-style: none;
             padding-left: 0;
         }
-        a{
+
+        a {
             font-size: 2rem;
         }
+
+        $color_1: #66c2e5;
+        $color_2: rgba(0, 0, 0, .1);
+        $font-family_1: "Source Sans Pro", arial, sans-serif;
+        $background-color_1: transparent;
+        $background-color_2: rgba(0, 0, 0, .1);
+
+        audio {
+            display:none;
+            }
+
+        .plyr--audio {
+            font-size:1rem;
+            .plyr__controls {
+                background-color: $background-color_1;
+                border: none;
+                color: $color_1;
+                font-family: $font-family_1;
+                padding: 20px 20px 20px 13px;
+                width: 100%;
+
+                button {
+                    &:hover {
+                        background-color: $background-color_2;
+                    }
+                }
+
+                button.tab-focus {
+                    &:focus {
+                        background-color: $background-color_2;
+                    }
+                }
+            }
+
+            .plyr__progress--buffer {
+                background-color: $background-color_2;
+                color: $color_2;
+            }
+
+            .plyr__volume--display {
+                background-color: $background-color_2;
+            }
+        }
+
+        a.plyr__controls__item.plyr__control {
+            &:hover {
+                background-color: $background-color_2;
+            }
+        }
+
+        .plyr__play-large {
+            background-color: $background-color_2;
+        }
+
+        .plyr__progress--played {
+            color: $color_2;
+        }
+
+        .plyr__volume--display {
+            color: $color_2;
+        }
+
+        .plyr__controls {
+            .plyr__controls__item.plyr__time {
+                font-size: 14px;
+                margin-left: 7px;
+            }
+        }
     }
-    &#indice{
-        .conteudo{
-            ol{
+
+    &#indice {
+        .conteudo {
+            ol {
                 text-align: left;
-                ul{
+
+                ul {
                     list-style: circle;
                     padding-left: 0;
                 }
             }
         }
     }
+
+
 
 }
