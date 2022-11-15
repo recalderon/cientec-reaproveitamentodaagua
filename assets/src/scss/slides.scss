@@ -6,6 +6,11 @@
     display: block !important;
 }
 
+header{
+    .btn{
+        pointer-events: all !important;
+    }
+}
 /* only when orientation is in portrait mode */
 @media all and (orientation:portrait) {
     #info {
