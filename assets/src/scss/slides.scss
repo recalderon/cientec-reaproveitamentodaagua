@@ -2,13 +2,16 @@
 #info {
     display: none;
 }
+#impress{
+    display: block !important;
+}
 
 /* only when orientation is in portrait mode */
 @media all and (orientation:portrait) {
     #info {
         display: block;
     }
-    .impress{
+    #impress{
         display: none !important;
     }
 }
